@@ -13,4 +13,44 @@
     --screen-background-1 : hsl(224, 36%, 15%);
     --screen-background-2 : hsl(0, 0%, 93%);
     --screen-background-3 : hsl(268, 71%, 12%);
+
+    --key-special-background-1 : hsl(225, 21%, 49%);
+    --key-special-background-2 : hsl(185, 42%, 37%);
+    --key-special-background-3 : hsl(281, 89%, 26%);
+
+    --key-special-shadow-1 : hsl(224, 28%, 35%);
+    --key-special-shadow-2 : hsl(185, 58%, 25%);
+    --key-special-shadow-3 : hsl(285, 91%, 52%);
+
+    --key-enter-background-1 : hsl(6, 63%, 50%);
+    --key-enter-background-2 : hsl(25, 98%, 40%);
+    --key-enter-background-3 : hsl(176, 100%, 44%);
+    
+    --key-enter-shadow-1 : hsl(6, 70%, 34%);
+    --key-enter-shadow-2 : hsl(25, 99%, 27%);
+    --key-enter-shadow-3 : hsl(177, 92%, 70%);
+
+    --key-normal-background-1 : hsl(30, 25%, 89%);
+    --key-normal-background-2 : hsl(45, 7%, 89%);
+    --key-normal-background-3 : hsl(268, 47%, 21%);
+
+    --key-normal-shadow-1 : hsl(28, 16%, 65%);
+    --key-normal-shadow-2 : hsl(35, 11%, 61%);
+    --key-normal-shadow-3 : hsl(290, 70%, 36%);
+
+    --key-special-text-1 : hsl(221, 14%, 31%);
+    --key-special-text-2 : hsl(60, 10%, 19%);;
+    --key-special-text-3 : hsl(0, 0%, 100%);
+
+    --key-enter-text-1 : hsl(221, 14%, 31%);
+    --key-enter-text-2 : hsl(60, 10%, 19%);;
+    --key-enter-text-3 : hsl(198, 20%, 13%);
+
+    --key-normal-text-1 : hsl(221, 14%, 31%);
+    --key-normal-text-2 : hsl(60, 10%, 19%);
+    --key-normal-text-3 : hsl(52, 100%, 62%);
+
+    --screen-text-1 : hsl(0, 0%, 100%);
+    --screen-text-2 : hsl(0, 0%, 100%);
+    --screen-text-3 : hsl(52, 100%, 62%);
 }
