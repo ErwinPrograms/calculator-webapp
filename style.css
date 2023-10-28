@@ -38,12 +38,12 @@
     --key-normal-shadow-2 : hsl(35, 11%, 61%);
     --key-normal-shadow-3 : hsl(290, 70%, 36%);
 
-    --key-special-text-1 : hsl(221, 14%, 31%);
+    --key-special-text-1 : hsl(0, 0%, 100%);
     --key-special-text-2 : hsl(60, 10%, 19%);;
     --key-special-text-3 : hsl(0, 0%, 100%);
 
-    --key-enter-text-1 : hsl(221, 14%, 31%);
-    --key-enter-text-2 : hsl(60, 10%, 19%);;
+    --key-enter-text-1 : hsl(0, 0%, 100%);
+    --key-enter-text-2 : hsl(60, 10%, 19%);
     --key-enter-text-3 : hsl(198, 20%, 13%);
 
     --key-normal-text-1 : hsl(221, 14%, 31%);
@@ -53,4 +53,56 @@
     --screen-text-1 : hsl(0, 0%, 100%);
     --screen-text-2 : hsl(0, 0%, 100%);
     --screen-text-3 : hsl(52, 100%, 62%);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: var(--main-background-1);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-container {
+    width: clamp(50px, 30em, 80%);
+}
+
+.keypad {
+    background-color: var(--secondary-background-1);
+    border-radius: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    padding: 1em 1em;
+}
+
+.keypad button {
+    background-color: var(--key-normal-background-1);
+    color: var(--key-normal-text-1);
+    height: 2em;
+    border-radius: .25em;
+    font-size: 32px;
+}
+
+.keypad .special {
+    background-color: var(--key-special-background-1);
+    color: var(--key-special-text-1);
+}
+
+.keypad .reset {
+    grid-column: span 2;
+}
+
+.keypad .equals {
+    grid-column: span 2;
+    background-color: var(--key-enter-background-1);
+    color: var(--key-enter-text-1);
 }
