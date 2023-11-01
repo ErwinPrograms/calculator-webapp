@@ -80,12 +80,14 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+    gap: 20px 10px;
     padding: 1em 1em;
 }
 
 .keypad button {
     background-color: var(--key-normal-background-1);
+    border: none;
+    box-shadow: 0 4px var(--key-normal-shadow-1);
     color: var(--key-normal-text-1);
     height: 2em;
     border-radius: .25em;
@@ -94,6 +96,7 @@ body {
 
 .keypad .special {
     background-color: var(--key-special-background-1);
+    box-shadow: 0 4px var(--key-special-shadow-1);
     color: var(--key-special-text-1);
 }
 
@@ -104,6 +107,7 @@ body {
 .keypad .equals {
     grid-column: span 2;
     background-color: var(--key-enter-background-1);
+    box-shadow: 0 4px var(--key-enter-shadow-1);
     color: var(--key-enter-text-1);
 }
 
