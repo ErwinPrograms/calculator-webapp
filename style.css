@@ -89,9 +89,19 @@ body {
     border: none;
     box-shadow: 0 4px var(--key-normal-shadow-1);
     color: var(--key-normal-text-1);
+    cursor: pointer;
     height: 2em;
     border-radius: .25em;
     font-size: 32px;
+}
+
+.keypad button:hover {
+    filter: brightness(1.25);
+}
+
+.keypad button:active {
+    box-shadow: none;
+    transform: translateY(4px);
 }
 
 .keypad .special {
