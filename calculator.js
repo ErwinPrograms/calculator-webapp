@@ -15,13 +15,23 @@ resetButton.addEventListener("click", function(e) {
 })
 
 function appendDigit(digit) {
-    if (screenElement.innerHTML == "0") {
+    let display = screenElement.innerHTML
+
+    if (digit == "." && display.includes(".")) {
+        return
+    }
+
+    if (display == "0") {
         if (digit == "0") {
             return
-        } else {
+        }
+        if (digit != ".") {
             screenElement.innerHTML = digit
         }
+        if (digit == ".") {
+            screenElement.innerHTML = "0."
+        }
     } else {
-        screenElement.innerHTML = screenElement.innerHTML + digit
+        screenElement.innerHTML = display + digit
     }
 }
