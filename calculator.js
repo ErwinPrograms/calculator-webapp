@@ -35,3 +35,15 @@ function appendDigit(digit) {
         screenElement.innerHTML = display + digit
     }
 }
+
+let deleteButton = document.querySelector(".delete")
+
+deleteButton.addEventListener("click", function(e) {
+    let display = screenElement.innerHTML
+
+    if(display.length == 1) {
+        screenElement.innerHTML = 0
+    } else {
+        screenElement.innerHTML = display.substring(0, display.length - 1)
+    }
+})
