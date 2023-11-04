@@ -47,3 +47,37 @@ deleteButton.addEventListener("click", function(e) {
         screenElement.innerHTML = display.substring(0, display.length - 1)
     }
 })
+
+let storedNumberString
+let storedOperatorString
+
+let additionButton = document.querySelector(".addition")
+
+additionButton.addEventListener("click", function(e) {
+    storedNumberString = screenElement.innerHTML
+    storedOperatorString = "+"
+    screenElement.innerHTML = 0;
+})
+
+let equalsButton = document.querySelector(".equals")
+
+equalsButton.addEventListener("click", function(e) {
+    console.log(Number(storedNumberString) + Number(screenElement.innerHTML) + storedOperatorString)
+    let answer = calculate(Number(storedNumberString), Number(screenElement.innerHTML), storedOperatorString)
+    
+    storedOperatorString = ""
+    storedNumberString = answer
+    screenElement.innerHTML = answer
+})
+
+function calculate(number1, number2, operationString) {
+    if (operationString == "+") {
+        return number1 + number2
+    } else if (operationString == "-") {
+        return number1 - number2
+    } else if (operationString == "/") {
+        return number1 / number2
+    } else if (operationString == "&times;") {
+        return number1 * number2
+    }
+}
