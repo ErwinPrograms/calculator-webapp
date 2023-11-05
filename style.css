@@ -3,7 +3,7 @@
     font-family: 'League Spartan', sans-serif;
 
     --main-background-1 : hsl(222, 26%, 31%);
-    --main-background-2 : hsl(0, 0%, 93%);
+    --main-background-2 : hsl(0, 0%, 90%);
     --main-background-3 : hsl(268, 75%, 9%);
     
     --secondary-background-1 : hsl(223, 31%, 20%);
@@ -39,11 +39,11 @@
     --key-normal-shadow-3 : hsl(290, 70%, 36%);
 
     --key-special-text-1 : hsl(0, 0%, 100%);
-    --key-special-text-2 : hsl(60, 10%, 19%);;
+    --key-special-text-2 : hsl(0, 0%, 100%);
     --key-special-text-3 : hsl(0, 0%, 100%);
 
     --key-enter-text-1 : hsl(0, 0%, 100%);
-    --key-enter-text-2 : hsl(60, 10%, 19%);
+    --key-enter-text-2 : hsl(0, 0%, 100%);
     --key-enter-text-3 : hsl(198, 20%, 13%);
 
     --key-normal-text-1 : hsl(221, 14%, 31%);
@@ -51,7 +51,7 @@
     --key-normal-text-3 : hsl(52, 100%, 62%);
 
     --screen-text-1 : hsl(0, 0%, 100%);
-    --screen-text-2 : hsl(0, 0%, 100%);
+    --screen-text-2 : hsl(60, 10%, 19%);
     --screen-text-3 : hsl(52, 100%, 62%);
 }
 
@@ -70,6 +70,14 @@ body {
     align-items: center;
 }
 
+.main.theme2 {
+    background-color: var(--main-background-2);
+}
+
+.main.theme3 {
+    background-color: var(--main-background-3);
+}
+
 .calc-container {
     width: clamp(50px, 30em, 80%);
 }
@@ -84,6 +92,14 @@ body {
     padding: 1em 1em;
 }
 
+.keypad.theme2 {
+    background-color: var(--secondary-background-2);
+}
+
+.keypad.theme3 {
+    background-color: var(--secondary-background-3);
+}
+
 .keypad button {
     background-color: var(--key-normal-background-1);
     border: none;
@@ -93,6 +109,18 @@ body {
     height: 2em;
     border-radius: .25em;
     font-size: 32px;
+}
+
+.keypad.theme2 button {
+    background-color: var(--key-normal-background-2);
+    box-shadow: 0 4px var(--key-normal-shadow-2);
+    color: var(--key-normal-text-2);
+}
+
+.keypad.theme3 button {
+    background-color: var(--key-normal-background-3);
+    box-shadow: 0 4px var(--key-normal-shadow-3);
+    color: var(--key-normal-text-3);
 }
 
 .keypad button:hover {
@@ -110,6 +138,18 @@ body {
     color: var(--key-special-text-1);
 }
 
+.keypad.theme2 .special {
+    background-color: var(--key-special-background-2);
+    box-shadow: 0 4px var(--key-special-shadow-2);
+    color: var(--key-special-text-2);
+}
+
+.keypad.theme3 .special {
+    background-color: var(--key-special-background-3);
+    box-shadow: 0 4px var(--key-special-shadow-3);
+    color: var(--key-special-text-3);
+}
+
 .keypad .reset {
     grid-column: span 2;
 }
@@ -119,6 +159,18 @@ body {
     background-color: var(--key-enter-background-1);
     box-shadow: 0 4px var(--key-enter-shadow-1);
     color: var(--key-enter-text-1);
+}
+
+.keypad.theme2 .equals{
+    background-color: var(--key-enter-background-2);
+    box-shadow: 0 4px var(--key-enter-shadow-2);
+    color: var(--key-enter-text-2);
+}
+
+.keypad.theme3 .equals{
+    background-color: var(--key-enter-background-3);
+    box-shadow: 0 4px var(--key-enter-shadow-3);
+    color: var(--key-enter-text-3);
 }
 
 .screen {
@@ -132,6 +184,16 @@ body {
     text-align: right;
 }
 
+.screen.theme2 {
+    background-color: var(--screen-background-2);
+    color: var(--screen-text-2);
+}
+
+.screen.theme3 {
+    background-color: var(--screen-background-3);
+    color: var(--screen-text-3);
+}
+
 .top {
     color: var(--screen-text-1);
     display: flex;
@@ -139,6 +201,14 @@ body {
     align-items: center;
     width: 100%;
     height: 3em;
+}
+
+.top.theme2 {
+    color: var(--screen-text-2);
+}
+
+.top.theme3 {
+    color: var(--screen-text-3);
 }
 
 .top .theme-selection {
@@ -166,6 +236,14 @@ body {
     border-radius: 100em;
 }
 
+.top.theme2 .selector .slider-container input {
+    background-color: var(--secondary-background-2);
+}
+
+.top.theme3 .selector .slider-container input {
+    background-color: var(--secondary-background-3);
+}
+
 .selector .slider-container input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -174,4 +252,12 @@ body {
     border: none;
     border-radius: 50%;
     background-color: var(--key-enter-background-1);
+}
+
+.top.theme2 .slider-container input::-webkit-slider-thumb {
+    background-color: var(--key-enter-background-2);
+}
+
+.top.theme3 .slider-container input::-webkit-slider-thumb {
+    background-color: var(--key-enter-background-3);
 }
