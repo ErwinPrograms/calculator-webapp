@@ -6,27 +6,21 @@
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+This is a four function calculator with multiple themes written in plain HTML, CSS and Javascript.
 
 ### The challenge
+Create a calculator app with the following features:
+- Create a fully working four function calculator
+- Add three different UI themes and a theme selector 
 
 ### Screenshot
 
 ### Links
-
-## My process
-
-### Built with
-
-### Useful resources
+Live site URL: [Link](https://erwinprograms.github.io/calculator-webapp/)
 
 ## Author
 
