@@ -5,15 +5,16 @@ themeSlider.addEventListener("input", function(e) {
 })
 
 function updateThemeAllElements(themeNumber){
-    let mainElement = document.querySelector(".main")
-    let keypadElement = document.querySelector(".keypad")
-    let screenElement = document.querySelector(".screen")
-    let topDivElement = document.querySelector(".top")
+    let elementsToUpdate = [
+        document.querySelector(".main"),
+        document.querySelector(".keypad"),
+        document.querySelector(".screen"),
+        document.querySelector(".top")
+    ]
     
-    updateElementTheme(mainElement, themeNumber)
-    updateElementTheme(keypadElement, themeNumber)
-    updateElementTheme(screenElement, themeNumber)
-    updateElementTheme(topDivElement, themeNumber)
+    elementsToUpdate.forEach(element => {
+        updateElementTheme(element, themeNumber)
+    });
 }
 
 function updateElementTheme(element, themeNumber) {
