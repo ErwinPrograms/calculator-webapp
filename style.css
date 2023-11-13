@@ -79,16 +79,22 @@ body {
 }
 
 .calc-container {
-    width: clamp(50px, 30em, 80%);
+    width: clamp(375px, 30em, 80%);
+    height: clamp(50px, 40em, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .keypad {
+    width: 100%;
     background-color: var(--secondary-background-1);
     border-radius: 1em;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px 10px;
+    gap: 30px 20px;
     padding: 1em 1em;
 }
 
@@ -177,7 +183,7 @@ body {
     background-color: var(--screen-background-1);
     color: var(--screen-text-1);
     border-radius: .25em;
-    font-size: 32px;
+    font-size: 48px;
     width: 100%;
     height: 2em;
     padding: .5em .5em;
